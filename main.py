@@ -26,11 +26,11 @@ def main():
 
         print(f"Connection http respond code: {currency.status()[0]}\nStatus: {currency.status()[1]}")
 
-        q = input("Do you want to Sale, Purchase, or show Currency? (s/p/c): ")
+        q = input("Do you want to Sell, Purchase, or show Currency? (s/p/c): ")
 
         if q.lower() == 's':
-            currency_name = input("Which currency you want to sale?\n(three capital letters): ")
-            value = float(input(f"Enter sailing value ({currency_name}): "))
+            currency_name = input("Which currency you want to sell?\n(three capital letters): ")
+            value = float(input(f"Enter selling value ({currency_name}): "))
             result = currency.sale(currency_name, value)
             print(f"Result: {result} UAH")
 
