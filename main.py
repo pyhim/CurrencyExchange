@@ -3,7 +3,6 @@ from currency import Currency
 
 
 def want_to_restart():
-    loop = True
     answer = input("Want to restart? (y/n):")
 
     if answer == 'y':
@@ -13,8 +12,6 @@ def want_to_restart():
     else:
         print("Wrong letter!")
         want_to_restart()
-
-    return loop
 
 
 def main():
