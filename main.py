@@ -49,7 +49,7 @@ def main():
             print("Wrong letter! Restart...")
             continue
 
-        loop = want_to_restart()
+        want_to_restart()
 
 
 if __name__ == "__main__":
