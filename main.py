@@ -9,7 +9,7 @@ def want_to_restart():
     if answer == 'y':
         pass
     elif answer == 'n':
-        loop = False
+        raise SystemExit
     else:
         print("Wrong letter!")
         want_to_restart()
@@ -21,9 +21,7 @@ def main():
 
     print("Welcome to the Currency Exchange!")
 
-    loop = True
-
-    while loop:
+    while True:
         currency = Currency()
 
         print("Checking server message...")
