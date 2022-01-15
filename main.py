@@ -2,12 +2,26 @@ from time import sleep
 from currency import Currency
 
 
+def want_to_restart():
+    loop = True
+    answer = input("Want to restart? (y/n):")
+
+    if answer == 'y':
+        pass
+    elif answer == 'n':
+        loop = False
+    else:
+        print("Wrong letter!")
+        want_to_restart()
+
+    return loop
+
+
 def main():
 
     print("Welcome to the Currency Exchange!")
 
     loop = True
-    error = None
 
     while loop:
         currency = Currency()
@@ -40,12 +54,7 @@ def main():
             print("Wrong letter! Restart...")
             continue
 
-        q = input("Want to restart? (y/n): ")
-
-        if q.lower() == 'y':
-            continue
-        else:
-            loop = False
+        loop = want_to_restart()
 
 
 if __name__ == "__main__":
