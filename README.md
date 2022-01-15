@@ -1,3 +1,4 @@
 Download three python files in one folder, and run main.py
 
-To download compiled program, go dist/ and download main script
+To download compiled program, go dist/ and download main script.
+Run it in Bash, PowerShell, or cmd
